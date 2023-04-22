@@ -1,0 +1,57 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color: #000;
+}
+
+body{
+    display: grid;
+    height: 100vh;
+    text-align: center;
+    align-content: start;
+    grid-template-rows: auto 1fr auto;
+    color: #fff;
+    header{
+        nav{
+            .contact{
+                a{
+                    padding: 10px;
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 20px;
+                }
+
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+
+            .about{
+                text-align: right;
+            }
+
+            img{
+                width: 200px;
+            }
+
+            display: grid;
+            grid-template-columns: auto 8fr 5fr;
+            text-align: center;
+            align-items: center;
+            color: #fff;
+        }
+    }
+
+    main{
+        background-color: blue;
+    }
+
+    footer{
+        background-color: green;
+    }
+}
+
+header, main, footer{
+    padding: 5px;
+    margin: 0px;
+}
