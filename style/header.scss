@@ -1,0 +1,30 @@
+header{
+    nav{
+        .contact{
+            a{
+                padding: 10px;
+                text-decoration: none;
+                color: #fff;
+                font-size: 20px;
+            }
+
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+
+        .about{
+            text-align: right;
+        }
+
+        img{
+            width: 200px;
+        }
+
+        display: grid;
+        grid-template-columns: auto 8fr 5fr;
+        text-align: center;
+        align-items: center;
+        color: #fff;
+    }
+}
