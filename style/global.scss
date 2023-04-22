@@ -2,19 +2,14 @@
     padding: 0px;
     margin: 0px;
     background-color: #000;
-}
 
-body{
-    display: grid;
-    height: 100vh;
-    text-align: center;
-    align-content: start;
-    grid-template-rows: auto 1fr auto;
-    color: #fff;
-
-
-    footer{
-        background-color: green;
+    body{
+        display: grid;
+        height: 100vh;
+        text-align: center;
+        align-content: start;
+        grid-template-rows: auto 1fr auto;
+        color: #fff;
     }
 }
 

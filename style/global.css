@@ -3,17 +3,13 @@
   margin: 0px;
   background-color: #000;
 }
-
-body {
+* body {
   display: grid;
   height: 100vh;
   text-align: center;
   align-content: start;
   grid-template-rows: auto 1fr auto;
   color: #fff;
-}
-body footer {
-  background-color: green;
 }
 
 header, main, footer {
