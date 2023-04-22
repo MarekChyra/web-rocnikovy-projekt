@@ -14,7 +14,18 @@ header{
         }
 
         .about{
-            text-align: right;
+            text-align: center;
+
+            a{
+                padding: 10px;
+                text-decoration: none;
+                color: #fff;
+                font-size: 20px;
+            }
+
+            a:hover{
+                text-decoration: underline;
+            }
         }
 
         img{

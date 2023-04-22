@@ -15,7 +15,16 @@ header nav .contact a:hover {
   text-decoration: underline;
 }
 header nav .about {
-  text-align: right;
+  text-align: center;
+}
+header nav .about a {
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+header nav .about a:hover {
+  text-decoration: underline;
 }
 header nav img {
   width: 200px;
