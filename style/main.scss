@@ -1,25 +1,51 @@
 main{
     display: block;
-    background-color: blue;
 
     .uvod{
-        display: block;
-        height: 93vh;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        height: 100vh;
         
+        .obrazok{
+            align-content: end;
+        }
+
+        .title{
+            align-items: start;
+        }
+
         h1{
             text-align: center;
         }
 
         img{
-            width: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 500px;
+        }
+    }
+
+    .about{
+        background-color: #222;
+        padding: 50px;
+
+        h2{
+            font-size: 50px;
+        }
+
+        h3{
+            padding-top: 15px;
+            font-size: 30px;
+        }
+
+        p{
+            font-size: 20px;
         }
     }
 
     div{
         display: grid;
-        grid-template-columns: 1fr 1fr;
         text-align: left;
-        margin-bottom: 5px;
         font-size: xx-large;
 
         p{

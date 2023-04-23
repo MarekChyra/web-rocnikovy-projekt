@@ -1,22 +1,42 @@
 main {
   display: block;
-  background-color: blue;
 }
 main .uvod {
-  display: block;
-  height: 93vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 100vh;
+}
+main .uvod .obrazok {
+  align-content: end;
+}
+main .uvod .title {
+  align-items: start;
 }
 main .uvod h1 {
   text-align: center;
 }
 main .uvod img {
-  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+main .about {
+  background-color: #222;
+  padding: 50px;
+}
+main .about h2 {
+  font-size: 50px;
+}
+main .about h3 {
+  padding-top: 15px;
+  font-size: 30px;
+}
+main .about p {
+  font-size: 20px;
 }
 main div {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   text-align: left;
-  margin-bottom: 5px;
   font-size: xx-large;
 }
 main div p {

@@ -1,13 +1,22 @@
 * {
   padding: 0px;
   margin: 0px;
-  background-color: #000;
 }
 * body {
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
   color: #fff;
+  background-color: #000;
+}
+* body a {
+  margin: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+* body a:hover {
+  text-decoration: underline;
 }
 
 header, main, footer {

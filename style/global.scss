@@ -1,13 +1,27 @@
+$bg: #000;
+$color: #fff;
+
 *{
     padding: 0px;
     margin: 0px;
-    background-color: #000;
 
     body{
         display: grid;
         height: 100vh;
-        grid-template-columns: 1fr 1fr 1fr;
-        color: #fff;
+        grid-template-columns: 1fr 3fr 1fr;
+        color: $color;
+        background-color: $bg;
+
+        a{
+            margin: 20px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
     }
 }
 
