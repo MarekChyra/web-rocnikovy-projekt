@@ -2,6 +2,18 @@ main{
     display: block;
     background-color: blue;
 
+    .uvod{
+        display: block;
+        height: 93vh;
+        
+        h1{
+            text-align: center;
+        }
+
+        img{
+            width: 100px;
+        }
+    }
 
     div{
         display: grid;

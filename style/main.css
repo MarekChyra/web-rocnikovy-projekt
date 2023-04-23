@@ -2,6 +2,16 @@ main {
   display: block;
   background-color: blue;
 }
+main .uvod {
+  display: block;
+  height: 93vh;
+}
+main .uvod h1 {
+  text-align: center;
+}
+main .uvod img {
+  width: 100px;
+}
 main div {
   display: grid;
   grid-template-columns: 1fr 1fr;
