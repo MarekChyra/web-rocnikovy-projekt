@@ -1,3 +1,4 @@
+@charset "UTF-8";
 main {
   display: block;
 }
@@ -21,7 +22,7 @@ main .uvod img {
   width: 500px;
 }
 main .about {
-  background-color: #222;
+  background-color: rgb(35, 38, 39);
   padding: 50px;
 }
 main .about h2 {
@@ -33,6 +34,14 @@ main .about h3 {
 }
 main .about p {
   font-size: 20px;
+}
+main .skills {
+  /*
+  DOKONČIT KARTY PRI SKILLOCH
+  */
+}
+main .skills h1 {
+  text-align: center;
 }
 main div {
   display: grid;

@@ -1,9 +1,10 @@
-$bg: #000;
+$bg: rgb(27, 29, 30);
 $color: #fff;
 
 *{
     padding: 0px;
     margin: 0px;
+    scroll-behavior: unset;
 
     body{
         display: grid;

@@ -1,7 +1,7 @@
 header {
   position: fixed;
   width: 60%;
-  background-color: black;
+  background-color: rgb(27, 29, 30);
 }
 header nav {
   display: grid;
