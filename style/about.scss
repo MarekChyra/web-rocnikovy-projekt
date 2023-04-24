@@ -1,0 +1,18 @@
+*{
+    body{
+        main{
+            .prve{
+                margin-top: 50px;
+            }
+
+            div{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                img{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 main {
   display: block;
 }
@@ -34,14 +33,6 @@ main .about h3 {
 }
 main .about p {
   font-size: 20px;
-}
-main .skills {
-  /*
-  DOKONČIT KARTY PRI SKILLOCH
-  */
-}
-main .skills h1 {
-  text-align: center;
 }
 main div {
   display: grid;

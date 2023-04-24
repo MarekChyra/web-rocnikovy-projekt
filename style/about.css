@@ -1,0 +1,10 @@
+* body main .prve {
+  margin-top: 50px;
+}
+* body main div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+* body main div img {
+  width: 50%;
+}/*# sourceMappingURL=about.css.map */
