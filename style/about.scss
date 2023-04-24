@@ -1,16 +1,20 @@
 *{
     body{
         main{
-            .prve{
-                margin-top: 50px;
+            h1{
+                margin-top: 100px;
+                margin-left: 75px;
+                text-align: left;
+                font-size: 100px;
             }
 
             div{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+                margin: 50px;
 
                 img{
-                    width: 50%;
+                    width: 75%;
                 }
             }
         }
