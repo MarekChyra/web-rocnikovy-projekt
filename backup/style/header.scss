@@ -1,0 +1,16 @@
+header{
+    position: fixed;
+    width: 60%;
+    background-color: rgb(27, 29, 30);
+
+    nav{
+        display: grid;
+        grid-template-columns: auto 1fr 1fr 1fr;
+        text-align: center;
+        align-items: center;
+
+        img{
+            height: 50px;
+        }
+    }
+}

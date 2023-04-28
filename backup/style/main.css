@@ -1,0 +1,48 @@
+main {
+  display: block;
+}
+main .uvod {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 100vh;
+}
+main .uvod .obrazok {
+  align-content: end;
+}
+main .uvod .title {
+  align-items: start;
+}
+main .uvod h1 {
+  text-align: center;
+}
+main .uvod img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+main .about {
+  background-color: rgb(35, 38, 39);
+  padding: 50px;
+}
+main .about h2 {
+  font-size: 50px;
+}
+main .about h3 {
+  padding-top: 15px;
+  font-size: 30px;
+}
+main .about p {
+  font-size: 20px;
+}
+main div {
+  display: grid;
+  text-align: left;
+  font-size: xx-large;
+}
+main div p {
+  margin: 25px;
+}
+main div img {
+  margin: 25px;
+  height: auto;
+}/*# sourceMappingURL=main.css.map */
