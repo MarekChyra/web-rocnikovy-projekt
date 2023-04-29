@@ -1,20 +1,55 @@
 * {
-  padding: 0px;
   margin: 0px;
+  padding: 0px;
+  font-family: Arial;
+  background-color: black;
+  color: white;
 }
-* body {
+* .nav {
+  background-color: black;
   display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr 3fr 1fr;
-  color: #fff;
-  background-color: rgb(27, 29, 30);
+  grid-template-columns: auto 1fr auto;
+  padding: 20px;
 }
-* body a {
-  margin: 20px;
+* .nav a {
   text-decoration: none;
-  color: #fff;
-  font-size: 20px;
+  color: white;
+  font-weight: bold;
 }
-* body a:hover {
-  text-decoration: underline;
+* .nav a:hover {
+  color: gray;
+}
+* .nav .nav-logo {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+* .nav .nav-logo span {
+  margin-top: 6px;
+  margin-left: 5px;
+  color: white;
+  font-weight: bold;
+  justify-content: center;
+}
+* .nav .nav-logo span span {
+  color: gray;
+}
+* .nav .nav-logo img {
+  height: 30px;
+}
+* .nav .nav-center {
+  text-align: center;
+  justify-content: center;
+  margin-top: 6px;
+}
+* .nav .nav-center a {
+  margin: 15px;
+}
+* .nav .nav-social {
+  margin-top: 6px;
+}
+* .nav .nav-social a {
+  margin: 0px 15px 15px 15px;
+}
+* .nav .nav-social a img {
+  height: 20px;
 }/*# sourceMappingURL=global.css.map */
