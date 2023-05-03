@@ -4,25 +4,37 @@ main{
     margin-top: 10rem;
     margin-bottom: 16rem;
 
+    p{
+        color: rgba(191, 191, 191, 1);
+    }
+
     .first{
         display: grid;
         grid-template-rows: auto auto auto;
         justify-items: center;
 
         .title{
-            margin-top: 150px;
-            text-align: center;
-            font-size: xx-large;
-            width: 800px;
+            h1{
+                text-align: center;
+                font-weight: 900;
+                letter-spacing: -0.025em;
+                font-size: 3.75rem;
+                line-height: 1;
+            }
+
+            max-width: 700px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
         }
     
         .explain{
             width: 550px;
             margin-top: 50px;
+            margin-bottom: 100px;
             
             p{
                 text-align: center;
-                color: lightgrey;
                 font-weight: 600;
             }
         }
@@ -32,6 +44,12 @@ main{
         margin-top: 100px;
         display: grid;
         grid-template-columns: auto auto;
+
+        .img{
+            img{
+                max-width: 1150px;
+            }
+        }
 
         div{
             display: grid;
@@ -50,14 +68,7 @@ main{
                 
                 p{
                     text-align: left;
-                    color: lightgrey;
                     font-weight: 600;
-                }
-            }
-
-            .img{
-                img{
-                    max-width: 1150px;
                 }
             }
         }
