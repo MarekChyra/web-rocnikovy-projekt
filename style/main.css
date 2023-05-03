@@ -33,6 +33,7 @@ main .first .explain {
 main .first .explain p {
   text-align: center;
   font-weight: 600;
+  line-height: 1.5;
 }
 main .second {
   margin-top: 100px;
@@ -48,9 +49,13 @@ main .second div {
   margin-left: 50px;
 }
 main .second div .title {
-  font-size: x-large;
+  font-size: 1.9rem;
   align-content: end;
-  width: 300px;
+  max-width: 350px;
+  letter-spacing: -0.025em;
+}
+main .second div .title h2 {
+  font-weight: 700;
 }
 main .second div .explain {
   width: 460px;
@@ -59,4 +64,67 @@ main .second div .explain {
 main .second div .explain p {
   text-align: left;
   font-weight: 600;
+  line-height: 1.5;
+}
+main .third {
+  margin-top: 300px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+main .third .img img {
+  margin-left: 250px;
+  max-width: 1150px;
+}
+main .third div {
+  display: grid;
+  grid-template-rows: auto auto;
+  margin-right: 50px;
+}
+main .third div .title {
+  align-content: end;
+  font-size: 1.9rem;
+  align-content: end;
+  max-width: 450px;
+  letter-spacing: -0.025em;
+}
+main .third div .explain {
+  width: 460px;
+  margin-top: 25px;
+}
+main .third div .explain p {
+  text-align: left;
+  font-weight: 600;
+  line-height: 1.5;
+}
+main .fourth {
+  margin-top: 300px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+main .fourth .img img {
+  max-width: 100%;
+  height: auto;
+}
+main .fourth div {
+  display: grid;
+  grid-template-rows: auto auto;
+  margin-left: 100px;
+}
+main .fourth div .title {
+  font-size: 1.9rem;
+  align-content: end;
+  max-width: 350px;
+  letter-spacing: -0.025em;
+}
+main .fourth div .title h2 {
+  font-weight: 700;
+}
+main .fourth div .explain {
+  width: 460px;
+  margin-top: 25px;
+}
+main .fourth div .explain p {
+  text-align: left;
+  font-weight: 600;
+  line-height: 1.5;
 }/*# sourceMappingURL=main.css.map */

@@ -36,6 +36,7 @@ main{
             p{
                 text-align: center;
                 font-weight: 600;
+                line-height: 1.5;
             }
         }
     }
@@ -57,9 +58,14 @@ main{
             margin-left: 50px;
 
             .title{
-                font-size: x-large;
+                font-size: 1.9rem;
                 align-content: end;
-                width: 300px;
+                max-width: 350px;
+                letter-spacing: -0.025em;
+
+                h2{
+                    font-weight: 700;
+                }
             }
     
             .explain{
@@ -69,6 +75,86 @@ main{
                 p{
                     text-align: left;
                     font-weight: 600;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+
+    .third{
+        margin-top: 300px;
+        display: grid;
+        grid-template-columns: auto auto;
+
+        .img{
+            img{
+                margin-left: 250px;
+                max-width: 1150px;
+            }
+        }
+
+        div{
+            display: grid;
+            grid-template-rows: auto auto;
+            margin-right: 50px;
+
+            .title{
+                align-content: end;
+                font-size: 1.9rem;
+                align-content: end;
+                max-width: 450px;
+                letter-spacing: -0.025em;
+            }
+    
+            .explain{
+                width: 460px;
+                margin-top: 25px;
+                
+                p{
+                    text-align: left;
+                    font-weight: 600;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+
+    .fourth{
+        margin-top: 300px;
+        display: grid;
+        grid-template-columns: auto auto;
+
+        .img{
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        div{
+            display: grid;
+            grid-template-rows: auto auto;
+            margin-left: 100px;
+
+            .title{
+                font-size: 1.9rem;
+                align-content: end;
+                max-width: 350px;
+                letter-spacing: -0.025em;
+
+                h2{
+                    font-weight: 700;
+                }
+            }
+    
+            .explain{
+                width: 460px;
+                margin-top: 25px;
+                
+                p{
+                    text-align: left;
+                    font-weight: 600;
+                    line-height: 1.5;
                 }
             }
         }
