@@ -22,53 +22,5 @@
 }
 * a:hover {
   color: white;
-}
-* .nav {
-  background-color: black;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  padding: 20px;
-}
-* .nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-* .nav a:hover {
-  color: gray;
-}
-* .nav .nav-logo {
-  display: grid;
-  grid-template-columns: auto auto;
-}
-* .nav .nav-logo span {
-  margin-top: 6px;
-  margin-left: 5px;
-  color: white;
-  font-weight: bold;
-  justify-content: center;
-}
-* .nav .nav-logo span span {
-  color: gray;
-}
-* .nav .nav-logo img {
-  height: 30px;
-}
-* .nav .nav-center {
-  text-align: center;
-  justify-content: center;
-  margin-top: 6px;
-}
-* .nav .nav-center a {
-  margin: 15px;
-  font-size: 0.9rem;
-}
-* .nav .nav-social {
-  margin-top: 6px;
-}
-* .nav .nav-social a {
-  margin: 0px 5px 5px 5px;
-}
-* .nav .nav-social a img {
-  height: 17px;
+  transition: 0.5s;
 }/*# sourceMappingURL=global.css.map */

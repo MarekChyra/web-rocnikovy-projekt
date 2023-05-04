@@ -21,70 +21,10 @@
         text-decoration: none;
         color: gray;
         font-weight: bold;
-
+    
         &:hover{
             color: white;
-        }
-    }
-    
-    .nav{
-        background-color: black;
-        display: grid;
-        grid-template-columns: auto 1fr auto;
-        padding: 20px;
-        
-        a{
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-
-            &:hover{
-                color: gray;
-            }
-        }
-
-        .nav-logo{
-            display: grid;
-            grid-template-columns: auto auto;
-
-            span{
-                margin-top: 6px;
-                margin-left: 5px;
-                color: white;
-                font-weight: bold;
-                justify-content: center;
-                
-                span{
-                    color: gray;
-                }
-            }
-
-            img{
-                height: 30px;
-            }
-        }
-        
-        .nav-center{
-            text-align: center;
-            justify-content: center;
-            margin-top: 6px;
-            
-            a{
-                margin: 15px;
-                font-size: 0.9rem;
-            }
-        }
-
-        .nav-social{
-            margin-top: 6px;
-
-            a{
-                margin: 0px 5px 5px 5px;
-
-                img{
-                    height: 17px;
-                }
-            }
+            transition: 0.5s;
         }
     }
 }
