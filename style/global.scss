@@ -4,6 +4,28 @@
     font-family: Arial;
     background-color: black;
     color: white;
+
+    h1{
+        font-weight: 900;
+        letter-spacing: -0.025em;
+        font-size: 3.75rem;
+        line-height: 1;
+    }
+
+    p{
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
+    a{
+        text-decoration: none;
+        color: gray;
+        font-weight: bold;
+
+        &:hover{
+            color: white;
+        }
+    }
     
     .nav{
         background-color: black;
