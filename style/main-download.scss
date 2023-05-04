@@ -1,3 +1,131 @@
 main{
-    
+    display: grid;
+    grid-template-rows: auto auto;
+
+    .spacer{
+        width: 150px;
+    }
+
+    .download-portmaster{
+        display: grid;
+        grid-template-columns: 1fr auto auto 1fr;
+        margin-top: 200px;
+
+        .left{
+            align-items: center;
+            justify-items: center;
+            margin-top: 100px;
+            margin-right: 150px;
+
+            h2{
+                font-size: 2.5rem;
+                max-width: 350px;
+            }
+
+            p{
+                max-width: 350px;
+            }
+        }
+
+        .right{
+            max-width: 56rem;
+
+            .under{
+                max-width: 56rem;
+                z-index: 0;
+            }
+
+            .on-top{
+                z-index: 1;
+
+                .obrazok{
+                    width: 200px;
+                }
+            }
+        }
+    }
+
+    .desktop{
+        margin: 150px 250px 0px 250px;
+        display: grid;
+        grid-template-rows: auto auto;
+
+        h2{
+            font-size: 2.5rem;
+            max-width: 350px;
+        }
+
+        .download{
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+
+            .karta{
+                border: 2px solid;
+                border-color: rgb(40, 40, 40);
+                background-color: rgb(20, 20, 20);
+                border-radius: 5px;
+                margin: 25px 25px 25px 0px;
+                padding: 25px;
+                display: grid;
+                grid-template-rows: auto auto auto;
+
+                .name{
+                    display: grid;
+                    grid-template-columns: auto 1fr;
+
+                    h3{
+                        font-size: 1.25rem;
+                        margin-right: 10px;
+                    }
+
+                    p{
+                        color: gray;
+                    }
+                }
+
+                .dependencies{
+                    display: grid;
+                    grid-template-rows: auto auto;
+                    margin-top: 20px;
+
+                    p{
+                        color: gray;
+                        margin-bottom: 5px;
+                    }
+
+                    .linky{
+                        display: grid;
+                        grid-template-columns: auto 1fr;
+
+                        a{
+                            margin-right: 5px;
+                            color: rgb(97, 136, 255);
+                            margin-bottom: 3px;
+                        }
+                    }
+                }
+
+                .additional{
+                    display: grid;
+                    grid-template-columns: auto;
+                    margin-top: 10px;
+
+                    p{
+                        color: gray;
+                        margin-bottom: 5px;
+                    }
+
+                    .linky{
+                        display: grid;
+                        grid-template-columns: auto;
+
+                        a{
+                            color: rgb(97, 136, 255);
+                            margin-bottom: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
