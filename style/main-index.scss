@@ -2,7 +2,6 @@ main{
     display: grid;
     grid-template-rows: auto auto;
     margin-top: 10rem;
-    margin-bottom: 16rem;
 
     p{
         color: rgba(191, 191, 191, 1);
@@ -10,11 +9,13 @@ main{
 
     .first{
         display: grid;
-        grid-template-rows: auto auto auto;
-        justify-content: center;
+        grid-template-rows: auto auto;
 
-        .title{
-            justify-self: center;
+        .top{
+            display: grid;
+            grid-row: repeat(2, auto);
+            justify-content: center;
+            padding-top: 64px;
 
             h1{
                 text-align: center;
@@ -22,144 +23,143 @@ main{
                 letter-spacing: -0.025em;
                 font-size: 3.75rem;
                 line-height: 1;
+                width: 700px;
             }
 
-            max-width: 700px;
-        }
-    
-        .explain{
-            justify-self: center;
-            width: 550px;
-            margin-top: 50px;
-            margin-bottom: 100px;
-            
             p{
+                justify-self: center;
+                width: 512px;
                 text-align: center;
                 font-weight: 600;
                 line-height: 1.5;
+                margin-top: 32px;
             }
         }
 
         .video{
-            max-width: max-content;
+            margin-top: 32px;
+            padding: 0px 40px;
+            video{
+                width: 100%;
+            }
         }
     }
 
-    .second{
-        margin-top: 100px;
+    .genereal-layout{
+        margin: 160px 0px 256px;
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-rows: repeat(3, auto);
 
-        .img{
-            img{
-                max-width: 1150px;
-            }
-        }
-
-        div{
+        .second{
             display: grid;
-            grid-template-rows: auto auto;
-            margin-left: 50px;
+            grid-template-columns: auto auto;
+            justify-content: center;
+            margin: 0px 40px;
 
-            .title{
-                font-size: 1.9rem;
-                align-content: end;
-                max-width: 350px;
-                letter-spacing: -0.025em;
+            .img{
+                img{
+                    max-width: 1150px;
+                }
+            }
+
+            .left{
+                display: grid;
+                grid-template-rows: auto auto;
+                align-self: center;
+                margin-right: 128px;
+                height: fit-content;
 
                 h2{
                     font-weight: 700;
+                    font-size: 1.9rem;
+                    align-content: end;
+                    max-width: 350px;
+                    letter-spacing: -0.025em;
                 }
-            }
-    
-            .explain{
-                width: 460px;
-                margin-top: 25px;
-                
+
                 p{
+                    max-width: 448px;
+                    margin-top: 32px;
                     text-align: left;
                     font-weight: 600;
                     line-height: 1.5;
+                    color: #bfbfbf;
                 }
             }
         }
-    }
 
-    .third{
-        margin-top: 300px;
-        display: grid;
-        grid-template-columns: auto auto;
-
-        .img{
-            img{
-                margin-left: 250px;
-                max-width: 1150px;
-            }
-        }
-
-        div{
+        .third{
             display: grid;
-            grid-template-rows: auto auto;
-            margin-right: 50px;
+            grid-template-columns: auto auto;
+            justify-content: center;
+            margin: 240px 40px 0px;
 
-            .title{
-                align-content: end;
-                font-size: 1.9rem;
-                align-content: end;
-                max-width: 450px;
-                letter-spacing: -0.025em;
-            }
-    
-            .explain{
-                width: 460px;
-                margin-top: 25px;
-                
-                p{
-                    text-align: left;
-                    font-weight: 600;
-                    line-height: 1.5;
+            .img{
+                img{
+                    max-width: 1150px;
                 }
             }
-        }
-    }
 
-    .fourth{
-        margin-top: 300px;
-        margin-bottom: 256px;
-        display: grid;
-        grid-template-columns: auto auto;
-
-        .img{
-            img{
-                max-width: 100%;
-                height: auto;
-            }
-        }
-
-        div{
-            display: grid;
-            grid-template-rows: auto auto;
-            margin-left: 100px;
-
-            .title{
-                font-size: 1.9rem;
-                align-content: end;
-                max-width: 350px;
-                letter-spacing: -0.025em;
+            .right{
+                display: grid;
+                grid-template-rows: auto auto;
+                align-self: center;
+                margin-left: 128px;
+                height: fit-content;
 
                 h2{
                     font-weight: 700;
+                    font-size: 1.9rem;
+                    align-content: end;
+                    max-width: 350px;
+                    letter-spacing: -0.025em;
                 }
-            }
-    
-            .explain{
-                width: 460px;
-                margin-top: 25px;
-                
+
                 p{
+                    max-width: 448px;
+                    margin-top: 32px;
                     text-align: left;
                     font-weight: 600;
                     line-height: 1.5;
+                    color: #bfbfbf;
+                }
+            }
+        }
+
+        .fourth{
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: center;
+            margin: 240px 40px 0px;
+
+            .img{
+                img{
+                    max-width: 1150px;
+                }
+            }
+
+            .left{
+                display: grid;
+                grid-template-rows: auto auto;
+                align-self: center;
+                margin-right: 128px;
+                height: fit-content;
+
+                h2{
+                    font-weight: 700;
+                    font-size: 1.9rem;
+                    align-content: end;
+                    max-width: 350px;
+                    letter-spacing: -0.025em;
+                }
+
+                p{
+                    max-width: 448px;
+                    margin-top: 32px;
+                    text-align: left;
+                    font-weight: 600;
+                    line-height: 1.5;
+                    color: #bfbfbf;
                 }
             }
         }
