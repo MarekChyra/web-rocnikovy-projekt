@@ -10,13 +10,11 @@ main p {
 main .first {
   display: grid;
   grid-template-rows: auto auto auto;
-  justify-items: center;
+  justify-content: center;
 }
 main .first .title {
+  justify-self: center;
   max-width: 700px;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
 }
 main .first .title h1 {
   text-align: center;
@@ -26,6 +24,7 @@ main .first .title h1 {
   line-height: 1;
 }
 main .first .explain {
+  justify-self: center;
   width: 550px;
   margin-top: 50px;
   margin-bottom: 100px;
@@ -34,6 +33,10 @@ main .first .explain p {
   text-align: center;
   font-weight: 600;
   line-height: 1.5;
+}
+main .first .video {
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 main .second {
   margin-top: 100px;
@@ -98,6 +101,7 @@ main .third div .explain p {
 }
 main .fourth {
   margin-top: 300px;
+  margin-bottom: 256px;
   display: grid;
   grid-template-columns: auto auto;
 }
