@@ -2,12 +2,11 @@ main {
   display: grid;
   grid-template-rows: auto auto;
 }
-main .spacer {
-  width: 150px;
-}
 main .download-portmaster {
   display: grid;
-  grid-template-columns: 1fr auto auto 1fr;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  padding: 0px 40px;
   margin-top: 200px;
 }
 main .download-portmaster .left {
@@ -28,18 +27,15 @@ main .download-portmaster .right {
 }
 main .download-portmaster .right .under {
   max-width: 56rem;
-  z-index: 0;
-}
-main .download-portmaster .right .on-top {
-  z-index: 1;
-}
-main .download-portmaster .right .on-top .obrazok {
-  width: 200px;
+  width: auto;
+  height: auto;
 }
 main .desktop {
-  margin: 150px 250px 0px 250px;
   display: grid;
   grid-template-rows: auto auto;
+  justify-content: center;
+  row-gap: 75px;
+  margin-bottom: 300px;
 }
 main .desktop h2 {
   font-size: 2.5rem;
@@ -48,60 +44,133 @@ main .desktop h2 {
 main .desktop .download {
   display: grid;
   grid-template-columns: repeat(3, auto);
+  gap: 25px;
 }
 main .desktop .download .karta {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  row-gap: 10px;
+  padding: 30px;
   border: 2px solid;
+  border-radius: 5px;
   border-color: rgb(40, 40, 40);
   background-color: rgb(20, 20, 20);
-  border-radius: 5px;
-  margin: 25px 25px 25px 0px;
-  padding: 25px;
-  display: grid;
-  grid-template-rows: auto auto auto;
+}
+main .desktop .download .karta:hover {
+  transform: scaleX(1.05) scaleY(1.05);
+  transition: 0.2s;
 }
 main .desktop .download .karta .name {
   display: grid;
   grid-template-columns: auto 1fr;
+  background-color: rgb(20, 20, 20);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 main .desktop .download .karta .name h3 {
   font-size: 1.25rem;
-  margin-right: 10px;
+  background-color: rgb(20, 20, 20);
 }
 main .desktop .download .karta .name p {
   color: gray;
+  background-color: rgb(20, 20, 20);
 }
 main .desktop .download .karta .dependencies {
   display: grid;
   grid-template-rows: auto auto;
-  margin-top: 20px;
+  background-color: rgb(20, 20, 20);
+  row-gap: 5px;
 }
 main .desktop .download .karta .dependencies p {
   color: gray;
-  margin-bottom: 5px;
+  background-color: rgb(20, 20, 20);
 }
 main .desktop .download .karta .dependencies .linky {
   display: grid;
   grid-template-columns: auto 1fr;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  background-color: rgb(20, 20, 20);
 }
 main .desktop .download .karta .dependencies .linky a {
-  margin-right: 5px;
   color: rgb(97, 136, 255);
-  margin-bottom: 3px;
+  background-color: rgb(20, 20, 20);
+}
+main .desktop .download .karta .dependencies .linky a:hover {
+  color: rgb(17, 56, 255);
 }
 main .desktop .download .karta .additional {
   display: grid;
   grid-template-columns: auto;
-  margin-top: 10px;
+  row-gap: 5px;
+  background-color: rgb(20, 20, 20);
 }
 main .desktop .download .karta .additional p {
   color: gray;
-  margin-bottom: 5px;
+  background-color: rgb(20, 20, 20);
 }
 main .desktop .download .karta .additional .linky {
   display: grid;
   grid-template-columns: auto;
+  row-gap: 3px;
+  background-color: rgb(20, 20, 20);
 }
 main .desktop .download .karta .additional .linky a {
   color: rgb(97, 136, 255);
-  margin-bottom: 3px;
+  background-color: rgb(20, 20, 20);
+}
+main .desktop .download .karta .buttons {
+  background-color: rgb(20, 20, 20);
+}
+main .desktop .download .windows {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 10px;
+  padding: 25px;
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: rgb(40, 40, 40);
+  background-color: rgb(20, 20, 20);
+}
+main .desktop .download .windows:hover {
+  transform: scaleX(1.05) scaleY(1.05);
+  transition: 0.2s;
+}
+main .desktop .download .windows .name {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  background-color: rgb(20, 20, 20);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+main .desktop .download .windows .name h3 {
+  font-size: 1.25rem;
+  background-color: rgb(20, 20, 20);
+}
+main .desktop .download .windows .name p {
+  color: gray;
+  background-color: rgb(20, 20, 20);
+}
+main .desktop .download .windows .additional {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 5px;
+  background-color: rgb(20, 20, 20);
+}
+main .desktop .download .windows .additional p {
+  color: gray;
+  background-color: rgb(20, 20, 20);
+}
+main .desktop .download .windows .additional .linky {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 3px;
+  background-color: rgb(20, 20, 20);
+}
+main .desktop .download .windows .additional .linky a {
+  color: rgb(97, 136, 255);
+  background-color: rgb(20, 20, 20);
+}
+main .desktop .download .windows .buttons {
+  background-color: rgb(20, 20, 20);
 }/*# sourceMappingURL=main-download.css.map */

@@ -2,13 +2,11 @@ main{
     display: grid;
     grid-template-rows: auto auto;
 
-    .spacer{
-        width: 150px;
-    }
-
     .download-portmaster{
         display: grid;
-        grid-template-columns: 1fr auto auto 1fr;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        padding: 0px 40px;
         margin-top: 200px;
 
         .left{
@@ -32,23 +30,18 @@ main{
 
             .under{
                 max-width: 56rem;
-                z-index: 0;
-            }
-
-            .on-top{
-                z-index: 1;
-
-                .obrazok{
-                    width: 200px;
-                }
+                width: auto;
+                height: auto;
             }
         }
     }
 
     .desktop{
-        margin: 150px 250px 0px 250px;
         display: grid;
         grid-template-rows: auto auto;
+        justify-content: center;
+        row-gap: 75px;
+        margin-bottom: 300px;
 
         h2{
             font-size: 2.5rem;
@@ -58,49 +51,64 @@ main{
         .download{
             display: grid;
             grid-template-columns: repeat(3, auto);
+            gap: 25px;
 
             .karta{
+                display: grid;
+                grid-template-rows: repeat(4, auto);
+                row-gap: 10px;
+                padding: 30px;
                 border: 2px solid;
+                border-radius: 5px;
                 border-color: rgb(40, 40, 40);
                 background-color: rgb(20, 20, 20);
-                border-radius: 5px;
-                margin: 25px 25px 25px 0px;
-                padding: 25px;
-                display: grid;
-                grid-template-rows: auto auto auto;
+
+                &:hover{
+                    transform: scaleX(1.05) scaleY(1.05);
+                    transition: 0.2s;
+                }
 
                 .name{
                     display: grid;
                     grid-template-columns: auto 1fr;
+                    background-color: rgb(20, 20, 20);
+                    column-gap: 10px;
 
                     h3{
                         font-size: 1.25rem;
-                        margin-right: 10px;
+                        background-color: rgb(20, 20, 20);
                     }
 
                     p{
                         color: gray;
+                        background-color: rgb(20, 20, 20);
                     }
                 }
 
                 .dependencies{
                     display: grid;
                     grid-template-rows: auto auto;
-                    margin-top: 20px;
+                    background-color: rgb(20, 20, 20);
+                    row-gap: 5px;
 
                     p{
                         color: gray;
-                        margin-bottom: 5px;
+                        background-color: rgb(20, 20, 20);
                     }
 
                     .linky{
                         display: grid;
                         grid-template-columns: auto 1fr;
+                        column-gap: 5px;
+                        background-color: rgb(20, 20, 20);
 
                         a{
-                            margin-right: 5px;
                             color: rgb(97, 136, 255);
-                            margin-bottom: 3px;
+                            background-color: rgb(20, 20, 20);
+
+                            &:hover{
+                                color: rgb(17, 56, 255);
+                            }
                         }
                     }
                 }
@@ -108,22 +116,90 @@ main{
                 .additional{
                     display: grid;
                     grid-template-columns: auto;
-                    margin-top: 10px;
+                    row-gap: 5px;
+                    background-color: rgb(20, 20, 20);
 
                     p{
                         color: gray;
-                        margin-bottom: 5px;
+                        background-color: rgb(20, 20, 20);
                     }
 
                     .linky{
                         display: grid;
                         grid-template-columns: auto;
+                        row-gap: 3px;
+                        background-color: rgb(20, 20, 20);
 
                         a{
                             color: rgb(97, 136, 255);
-                            margin-bottom: 3px;
+                            background-color: rgb(20, 20, 20);
                         }
                     }
+                }
+
+                .buttons{
+                    background-color: rgb(20, 20, 20);
+                }
+            }
+            
+            .windows{
+                display: grid;
+                grid-template-rows: repeat(3, auto);
+                row-gap: 10px;
+                padding: 25px;
+                border: 2px solid;
+                border-radius: 5px;
+                border-color: rgb(40, 40, 40);
+                background-color: rgb(20, 20, 20);
+
+                &:hover{
+                    transform: scaleX(1.05) scaleY(1.05);
+                    transition: 0.2s;
+                }
+
+                .name{
+                    display: grid;
+                    grid-template-columns: auto 1fr;
+                    background-color: rgb(20, 20, 20);
+                    column-gap: 10px;
+
+                    h3{
+                        font-size: 1.25rem;
+                        background-color: rgb(20, 20, 20);
+                    }
+
+                    p{
+                        color: gray;
+                        background-color: rgb(20, 20, 20);
+                    }
+                }
+
+                .additional{
+                    display: grid;
+                    grid-template-columns: auto;
+                    row-gap: 5px;
+                    background-color: rgb(20, 20, 20);
+
+                    p{
+                        color: gray;
+                        background-color: rgb(20, 20, 20);
+                    }
+
+                    .linky{
+                        display: grid;
+                        grid-template-columns: auto;
+                        row-gap: 3px;
+                        background-color: rgb(20, 20, 20);
+
+                        a{
+                            color: rgb(97, 136, 255);
+                            background-color: rgb(20, 20, 20);
+                        }
+                    }
+                }
+
+                .buttons{
+                    background-color: rgb(20, 20, 20);
                 }
             }
         }
