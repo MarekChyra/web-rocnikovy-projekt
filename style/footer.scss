@@ -5,7 +5,13 @@ footer{
 
     .site-map{
         display: grid;
-        grid-template-columns: repeat(4, auto);
+        @media (min-width: 1024px) {
+            grid-template-columns: repeat(4, auto);
+        }
+        @media (max-width: 1023px) {
+            grid-template-columns: repeat(2, auto);
+            row-gap: 3.5rem;
+        }
         justify-content: space-around;
 
         .kategoria{
@@ -61,12 +67,20 @@ footer{
 
         .content-legal{
             display: grid;
-            grid-template-columns: repeat(2, auto);
+            @media (min-width: 1024px) {
+                grid-template-columns: repeat(2, auto);
+            }
+            @media (max-width: 1023px) {
+                grid-template-columns: repeat(1, auto);
+            }
             column-gap: 48px;
 
             .copy{
                 color: rgb(70, 70, 70);
                 font-size: 0.9rem;
+                @media (max-width: 1023px) {
+                    justify-self: center;
+                }
             }
 
             .linky-legal{

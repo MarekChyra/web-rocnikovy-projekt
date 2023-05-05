@@ -1,6 +1,6 @@
 main{
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: repeat(2, auto);
     margin-top: 10rem;
 
     p{
@@ -9,11 +9,11 @@ main{
 
     .first{
         display: grid;
-        grid-template-rows: auto auto;
+        grid-template-rows: repeat(2, auto);
 
         .top{
             display: grid;
-            grid-row: repeat(2, auto);
+            grid-template-rows: repeat(2, auto);
             justify-content: center;
             padding-top: 64px;
 
@@ -50,24 +50,44 @@ main{
         display: grid;
         grid-template-rows: repeat(3, auto);
 
+        @media (max-width: 1023px) {
+            .item1 {grid-area: 2;}
+            .item2 {grid-area: 1;}
+        }
+
         .second{
             display: grid;
-            grid-template-columns: auto auto;
+            @media (min-width: 1024px) {
+                grid-template-columns: repeat(2, auto);
+            }
+            @media (max-width: 1023px) {
+                grid-template-columns: repeat(1, auto);
+            }
             justify-content: center;
             margin: 0px 40px;
 
             .img{
+                width: 100%;
+
                 img{
                     max-width: 1150px;
+                    width: 100%;
                 }
             }
 
             .left{
                 display: grid;
-                grid-template-rows: auto auto;
+                grid-template-rows: repeat(2, auto);
                 align-self: center;
-                margin-right: 128px;
                 height: fit-content;
+                @media (min-width: 1024px) {
+                    margin-right: 128px;
+                    margin-top: 0px;
+                }
+                @media (max-width: 1023px) {
+                    margin-right: 0px;
+                    margin-top: 80px;
+                }
 
                 h2{
                     font-weight: 700;
@@ -75,6 +95,9 @@ main{
                     align-content: end;
                     max-width: 350px;
                     letter-spacing: -0.025em;
+                    @media (max-width: 1023px) {
+                        justify-self: center;
+                    }
                 }
 
                 p{
@@ -84,28 +107,46 @@ main{
                     font-weight: 600;
                     line-height: 1.5;
                     color: #bfbfbf;
+                    @media (max-width: 1023px) {
+                        justify-self: center;
+                    }
                 }
             }
         }
 
         .third{
             display: grid;
-            grid-template-columns: auto auto;
+            @media (min-width: 1024px) {
+                grid-template-columns: repeat(2, auto);
+            }
+            @media (max-width: 1023px) {
+                grid-template-columns: repeat(1, auto);
+            }
             justify-content: center;
             margin: 240px 40px 0px;
 
             .img{
+                width: 100%;
+
                 img{
                     max-width: 1150px;
+                    width: 100%;
                 }
             }
 
             .right{
                 display: grid;
-                grid-template-rows: auto auto;
+                grid-template-rows: repeat(2, auto);
                 align-self: center;
-                margin-left: 128px;
                 height: fit-content;
+                @media (min-width: 1024px) {
+                    margin-left: 128px;
+                    margin-top: 0px;
+                }
+                @media (max-width: 1023px) {
+                    margin-left: 0px;
+                    margin-top: 80px;
+                }
 
                 h2{
                     font-weight: 700;
@@ -113,6 +154,9 @@ main{
                     align-content: end;
                     max-width: 350px;
                     letter-spacing: -0.025em;
+                    @media (max-width: 1023px) {
+                        justify-self: center;
+                    }
                 }
 
                 p{
@@ -122,28 +166,46 @@ main{
                     font-weight: 600;
                     line-height: 1.5;
                     color: #bfbfbf;
+                    @media (max-width: 1023px) {
+                        justify-self: center;
+                    }
                 }
             }
         }
 
         .fourth{
             display: grid;
-            grid-template-columns: auto auto;
+            @media (min-width: 1024px) {
+                grid-template-columns: repeat(2, auto);
+            }
+            @media (max-width: 1023px) {
+                grid-template-columns: repeat(1, auto);
+            }
             justify-content: center;
             margin: 240px 40px 0px;
 
             .img{
+                width: 100%;
+
                 img{
                     max-width: 1150px;
+                    width: 100%;
                 }
             }
 
             .left{
                 display: grid;
-                grid-template-rows: auto auto;
+                grid-template-rows: repeat(2, auto);
                 align-self: center;
-                margin-right: 128px;
                 height: fit-content;
+                @media (min-width: 1024px) {
+                    margin-right: 128px;
+                    margin-top: 0px;
+                }
+                @media (max-width: 1023px) {
+                    margin-right: 0px;
+                    margin-top: 80px;
+                }
 
                 h2{
                     font-weight: 700;
@@ -151,6 +213,9 @@ main{
                     align-content: end;
                     max-width: 350px;
                     letter-spacing: -0.025em;
+                    @media (max-width: 1023px) {
+                        justify-self: center;
+                    }
                 }
 
                 p{
@@ -160,6 +225,9 @@ main{
                     font-weight: 600;
                     line-height: 1.5;
                     color: #bfbfbf;
+                    @media (max-width: 1023px) {
+                        justify-self: center;
+                    }
                 }
             }
         }

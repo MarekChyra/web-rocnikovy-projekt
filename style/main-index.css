@@ -1,6 +1,6 @@
 main {
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: repeat(2, auto);
   margin-top: 10rem;
 }
 main p {
@@ -8,11 +8,11 @@ main p {
 }
 main .first {
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: repeat(2, auto);
 }
 main .first .top {
   display: grid;
-  grid-row: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
   justify-content: center;
   padding-top: 64px;
 }
@@ -44,22 +44,54 @@ main .genereal-layout {
   display: grid;
   grid-template-rows: repeat(3, auto);
 }
+@media (max-width: 1023px) {
+  main .genereal-layout .item1 {
+    grid-area: 2;
+  }
+  main .genereal-layout .item2 {
+    grid-area: 1;
+  }
+}
 main .genereal-layout .second {
   display: grid;
-  grid-template-columns: auto auto;
   justify-content: center;
   margin: 0px 40px;
 }
+@media (min-width: 1024px) {
+  main .genereal-layout .second {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media (max-width: 1023px) {
+  main .genereal-layout .second {
+    grid-template-columns: repeat(1, auto);
+  }
+}
+main .genereal-layout .second .img {
+  width: 100%;
+}
 main .genereal-layout .second .img img {
   max-width: 1150px;
+  width: 100%;
 }
 main .genereal-layout .second .left {
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: repeat(2, auto);
   align-self: center;
-  margin-right: 128px;
   height: -moz-fit-content;
   height: fit-content;
+}
+@media (min-width: 1024px) {
+  main .genereal-layout .second .left {
+    margin-right: 128px;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 1023px) {
+  main .genereal-layout .second .left {
+    margin-right: 0px;
+    margin-top: 80px;
+  }
 }
 main .genereal-layout .second .left h2 {
   font-weight: 700;
@@ -67,6 +99,11 @@ main .genereal-layout .second .left h2 {
   align-content: end;
   max-width: 350px;
   letter-spacing: -0.025em;
+}
+@media (max-width: 1023px) {
+  main .genereal-layout .second .left h2 {
+    justify-self: center;
+  }
 }
 main .genereal-layout .second .left p {
   max-width: 448px;
@@ -76,22 +113,51 @@ main .genereal-layout .second .left p {
   line-height: 1.5;
   color: #bfbfbf;
 }
+@media (max-width: 1023px) {
+  main .genereal-layout .second .left p {
+    justify-self: center;
+  }
+}
 main .genereal-layout .third {
   display: grid;
-  grid-template-columns: auto auto;
   justify-content: center;
   margin: 240px 40px 0px;
 }
+@media (min-width: 1024px) {
+  main .genereal-layout .third {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media (max-width: 1023px) {
+  main .genereal-layout .third {
+    grid-template-columns: repeat(1, auto);
+  }
+}
+main .genereal-layout .third .img {
+  width: 100%;
+}
 main .genereal-layout .third .img img {
   max-width: 1150px;
+  width: 100%;
 }
 main .genereal-layout .third .right {
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: repeat(2, auto);
   align-self: center;
-  margin-left: 128px;
   height: -moz-fit-content;
   height: fit-content;
+}
+@media (min-width: 1024px) {
+  main .genereal-layout .third .right {
+    margin-left: 128px;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 1023px) {
+  main .genereal-layout .third .right {
+    margin-left: 0px;
+    margin-top: 80px;
+  }
 }
 main .genereal-layout .third .right h2 {
   font-weight: 700;
@@ -99,6 +165,11 @@ main .genereal-layout .third .right h2 {
   align-content: end;
   max-width: 350px;
   letter-spacing: -0.025em;
+}
+@media (max-width: 1023px) {
+  main .genereal-layout .third .right h2 {
+    justify-self: center;
+  }
 }
 main .genereal-layout .third .right p {
   max-width: 448px;
@@ -108,22 +179,51 @@ main .genereal-layout .third .right p {
   line-height: 1.5;
   color: #bfbfbf;
 }
+@media (max-width: 1023px) {
+  main .genereal-layout .third .right p {
+    justify-self: center;
+  }
+}
 main .genereal-layout .fourth {
   display: grid;
-  grid-template-columns: auto auto;
   justify-content: center;
   margin: 240px 40px 0px;
 }
+@media (min-width: 1024px) {
+  main .genereal-layout .fourth {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media (max-width: 1023px) {
+  main .genereal-layout .fourth {
+    grid-template-columns: repeat(1, auto);
+  }
+}
+main .genereal-layout .fourth .img {
+  width: 100%;
+}
 main .genereal-layout .fourth .img img {
   max-width: 1150px;
+  width: 100%;
 }
 main .genereal-layout .fourth .left {
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: repeat(2, auto);
   align-self: center;
-  margin-right: 128px;
   height: -moz-fit-content;
   height: fit-content;
+}
+@media (min-width: 1024px) {
+  main .genereal-layout .fourth .left {
+    margin-right: 128px;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 1023px) {
+  main .genereal-layout .fourth .left {
+    margin-right: 0px;
+    margin-top: 80px;
+  }
 }
 main .genereal-layout .fourth .left h2 {
   font-weight: 700;
@@ -132,6 +232,11 @@ main .genereal-layout .fourth .left h2 {
   max-width: 350px;
   letter-spacing: -0.025em;
 }
+@media (max-width: 1023px) {
+  main .genereal-layout .fourth .left h2 {
+    justify-self: center;
+  }
+}
 main .genereal-layout .fourth .left p {
   max-width: 448px;
   margin-top: 32px;
@@ -139,4 +244,9 @@ main .genereal-layout .fourth .left p {
   font-weight: 600;
   line-height: 1.5;
   color: #bfbfbf;
+}
+@media (max-width: 1023px) {
+  main .genereal-layout .fourth .left p {
+    justify-self: center;
+  }
 }/*# sourceMappingURL=main-index.css.map */

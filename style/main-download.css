@@ -4,26 +4,61 @@ main {
 }
 main .download-portmaster {
   display: grid;
-  grid-template-columns: auto auto;
   justify-content: center;
   padding: 0px 40px;
-  margin-top: 200px;
+  margin-top: 64px;
+}
+@media (min-width: 1024px) {
+  main .download-portmaster {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media (max-width: 1023px) {
+  main .download-portmaster {
+    grid-template-columns: repeat(1, auto);
+  }
 }
 main .download-portmaster .left {
   align-items: center;
   justify-items: center;
-  margin-top: 100px;
   margin-right: 150px;
+  margin-top: 150px;
+}
+@media (max-width: 1023px) {
+  main .download-portmaster .left {
+    justify-self: center;
+    margin-right: 0px;
+  }
 }
 main .download-portmaster .left h2 {
   font-size: 2.5rem;
   max-width: 350px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+@media (max-width: 1023px) {
+  main .download-portmaster .left h2 {
+    text-align: center;
+  }
 }
 main .download-portmaster .left p {
   max-width: 350px;
+  margin-top: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+@media (max-width: 1023px) {
+  main .download-portmaster .left p {
+    text-align: center;
+  }
 }
 main .download-portmaster .right {
   max-width: 56rem;
+  margin-top: 80px;
 }
 main .download-portmaster .right .under {
   max-width: 56rem;
@@ -43,14 +78,28 @@ main .desktop h2 {
 }
 main .desktop .download {
   display: grid;
-  grid-template-columns: repeat(3, auto);
   gap: 25px;
+}
+@media (min-width: 1024px) {
+  main .desktop .download {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+@media (max-width: 1535px) {
+  main .desktop .download {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media (max-width: 1023px) {
+  main .desktop .download {
+    grid-template-columns: repeat(1, auto);
+  }
 }
 main .desktop .download .karta {
   display: grid;
   grid-template-rows: repeat(4, auto);
   row-gap: 10px;
-  padding: 30px;
+  padding: 40px;
   border: 2px solid;
   border-radius: 5px;
   border-color: rgb(40, 40, 40);

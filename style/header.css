@@ -29,21 +29,41 @@
 .nav .nav-logo img {
   height: 30px;
 }
-.nav .nav-center {
-  text-align: center;
-  justify-content: center;
-  margin-top: 6px;
+@media (min-width: 1024px) {
+  .nav .nav-center {
+    text-align: center;
+    justify-content: center;
+    margin-top: 6px;
+  }
+  .nav .nav-center a {
+    margin: 15px;
+    font-size: 0.9rem;
+  }
+  .nav .nav-social {
+    margin-top: 6px;
+  }
+  .nav .nav-social a {
+    margin: 0px 5px 5px 5px;
+  }
+  .nav .nav-social a img {
+    height: 17px;
+  }
+  .nav .hamburger {
+    display: none;
+  }
 }
-.nav .nav-center a {
-  margin: 15px;
-  font-size: 0.9rem;
-}
-.nav .nav-social {
-  margin-top: 6px;
-}
-.nav .nav-social a {
-  margin: 0px 5px 5px 5px;
-}
-.nav .nav-social a img {
-  height: 17px;
+@media (max-width: 1023px) {
+  .nav .nav-center {
+    display: none;
+  }
+  .nav .nav-social {
+    display: none;
+  }
+  .nav .hamburger {
+    display: grid;
+    justify-self: end;
+  }
+  .nav .hamburger img {
+    width: 25px;
+  }
 }/*# sourceMappingURL=header.css.map */
