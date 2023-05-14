@@ -1,0 +1,264 @@
+main {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  margin-top: 160px;
+}
+main p {
+  color: #bfbfbf;
+  font-size: 16px;
+  width: 448px;
+}
+main h2 {
+  color: #fff;
+  font-size: 48px;
+}
+main .genereal-layout {
+  margin: 0px 0px 256px;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+}
+main .genereal-layout p {
+  margin-top: 32px;
+}
+main .genereal-layout p span {
+  color: #bfbfbf;
+  -webkit-text-decoration: dashed underline #fff;
+          text-decoration: dashed underline #fff;
+}
+main .genereal-layout .img {
+  width: 100%;
+}
+main .genereal-layout .img img {
+  max-width: 1150px;
+  width: 100%;
+}
+main .genereal-layout h2 {
+  max-width: 448px;
+}
+main .genereal-layout span {
+  color: #6188FF;
+}
+@media (max-width: 1023px) {
+  main .genereal-layout .item1 {
+    grid-area: 2;
+  }
+  main .genereal-layout .item2 {
+    grid-area: 1;
+  }
+}
+main .genereal-layout .showcase-container {
+  display: grid;
+  justify-content: center;
+  margin: 240px 40px 0px;
+}
+@media (min-width: 1024px) {
+  main .genereal-layout .showcase-container {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media (max-width: 1023px) {
+  main .genereal-layout .showcase-container {
+    grid-template-columns: repeat(1, auto);
+  }
+}
+main .genereal-layout .showcase-container .left {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  align-self: center;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+@media (min-width: 1024px) {
+  main .genereal-layout .showcase-container .left {
+    margin-right: 128px;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 1023px) {
+  main .genereal-layout .showcase-container .left {
+    margin-right: 0px;
+    margin-top: 80px;
+  }
+}
+main .genereal-layout .showcase-container .left h2 {
+  font-weight: 700;
+  align-content: end;
+  letter-spacing: -0.025em;
+}
+@media (max-width: 1023px) {
+  main .genereal-layout .showcase-container .left h2 {
+    justify-self: center;
+  }
+}
+main .genereal-layout .showcase-container .left p {
+  text-align: left;
+  font-weight: 600;
+  line-height: 1.5;
+}
+@media (max-width: 1023px) {
+  main .genereal-layout .showcase-container .left p {
+    justify-self: center;
+  }
+}
+main .genereal-layout .showcase-container-reverse {
+  display: grid;
+  justify-content: center;
+  margin: 240px 40px 0px;
+}
+@media (min-width: 1024px) {
+  main .genereal-layout .showcase-container-reverse {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media (max-width: 1023px) {
+  main .genereal-layout .showcase-container-reverse {
+    grid-template-columns: repeat(1, auto);
+  }
+}
+main .genereal-layout .showcase-container-reverse .right {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  align-self: center;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+@media (min-width: 1024px) {
+  main .genereal-layout .showcase-container-reverse .right {
+    margin-left: 128px;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 1023px) {
+  main .genereal-layout .showcase-container-reverse .right {
+    margin-left: 0px;
+    margin-top: 80px;
+  }
+}
+main .genereal-layout .showcase-container-reverse .right h2 {
+  font-weight: 700;
+  align-content: end;
+  letter-spacing: -0.025em;
+}
+@media (max-width: 1023px) {
+  main .genereal-layout .showcase-container-reverse .right h2 {
+    justify-self: center;
+  }
+}
+main .genereal-layout .showcase-container-reverse .right p {
+  text-align: left;
+  font-weight: 600;
+  line-height: 1.5;
+}
+@media (max-width: 1023px) {
+  main .genereal-layout .showcase-container-reverse .right p {
+    justify-self: center;
+  }
+}
+main .genereal-layout .showcase-special {
+  display: grid;
+  justify-content: center;
+  margin: 240px 40px 0px;
+  width: -moz-fit-content;
+  width: fit-content;
+  justify-self: center;
+  max-width: 1536px;
+}
+@media (min-width: 1024px) {
+  main .genereal-layout .showcase-special {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media (max-width: 1023px) {
+  main .genereal-layout .showcase-special {
+    grid-template-columns: repeat(1, auto);
+  }
+}
+main .genereal-layout .showcase-special .left {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  align-self: center;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+main .genereal-layout .showcase-special .left h2 {
+  font-weight: 700;
+  align-content: end;
+  letter-spacing: -0.025em;
+}
+@media (max-width: 1023px) {
+  main .genereal-layout .showcase-special .left h2 {
+    justify-self: center;
+    width: auto;
+  }
+}
+main .genereal-layout .showcase-special .left p {
+  text-align: left;
+  font-weight: 600;
+  line-height: 1.5;
+}
+@media (max-width: 1023px) {
+  main .genereal-layout .showcase-special .left p {
+    justify-self: center;
+    width: auto;
+  }
+}
+main .genereal-layout .showcase-special .right {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-self: center;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+@media (min-width: 1024px) {
+  main .genereal-layout .showcase-special .right {
+    margin-left: 40px;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 1023px) {
+  main .genereal-layout .showcase-special .right {
+    margin-left: 0px;
+    margin-top: 80px;
+  }
+}
+@media (max-width: 767px) {
+  main .genereal-layout .showcase-special .right {
+    grid-template-columns: repeat(1, auto);
+  }
+}
+main .genereal-layout .showcase-special .right .item {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  margin-left: 40px;
+}
+main .genereal-layout .showcase-special .right .item i:before {
+  content: "\e919";
+}
+main .genereal-layout .showcase-special .right .item h2 {
+  font-weight: 700;
+  align-content: end;
+  letter-spacing: -0.025em;
+  font-size: 24px;
+  margin: 20px 0px 0px;
+}
+@media (max-width: 1023px) {
+  main .genereal-layout .showcase-special .right .item h2 {
+    justify-self: center;
+  }
+}
+main .genereal-layout .showcase-special .right .item p {
+  text-align: left;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 20px 0px 0px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (max-width: 1023px) {
+  main .genereal-layout .showcase-special .right .item p {
+    justify-self: center;
+  }
+}
+main .genereal-layout .second {
+  margin: 0px 40px 0px;
+}/*# sourceMappingURL=main-about.css.map */
