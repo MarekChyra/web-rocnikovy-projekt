@@ -1,0 +1,100 @@
+main {
+  display: grid;
+}
+main .uplne_hore .hore {
+  display: grid;
+  grid-template-columns: auto;
+  padding-top: 64px;
+  justify-items: center;
+}
+main .uplne_hore .hore h1 {
+  color: #fff;
+  font-size: 60px;
+  margin-top: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .uplne_hore .hore p {
+  color: #bfbfbf;
+  font-size: 16px;
+  margin-top: 32px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .uplne_hore .dole {
+  padding: 0px 40px;
+  margin-top: 30px;
+  display: grid;
+  justify-items: center;
+}
+main .uplne_hore .dole .container_karty {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .uplne_hore .dole .container_karty .karta {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  background-color: #0D0D0D;
+  border: solid #727272 2px;
+  border-radius: 5px;
+  padding: 48px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .uplne_hore .dole .container_karty .karta .nadpis .tier p {
+  color: #fff;
+  font-size: 24px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .uplne_hore .dole .container_karty .karta .nadpis .price {
+  margin-top: 16px;
+}
+main .uplne_hore .dole .container_karty .karta .nadpis .price p {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .uplne_hore .dole .container_karty .karta .nadpis .price p .cena {
+  color: #fff;
+  font-size: 60px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .uplne_hore .dole .container_karty .karta .nadpis .price p .dlzka {
+  color: #727272;
+  font-size: 18px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .uplne_hore .dole .container_karty .karta .nadpis .comment {
+  margin-top: 16px;
+}
+main .uplne_hore .dole .container_karty .karta .nadpis .comment p {
+  color: #8C8C8C;
+  font-size: 16px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .uplne_hore .dole .container_karty .karta .popis .features {
+  margin-top: 32px;
+}
+main .uplne_hore .dole .container_karty .karta .popis .features p {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #8C8C8C;
+  font-size: 16px;
+}
+main .uplne_hore .dole .container_karty .karta .popis .features ul {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+main .uplne_hore .dole .container_karty .karta .popis .features ul li {
+  margin-top: 12px;
+  font-size: 16px;
+  width: -moz-fit-content;
+  width: fit-content;
+}/*# sourceMappingURL=main-pricing.css.map */

@@ -22,8 +22,8 @@ main .genereal-layout p {
 }
 main .genereal-layout p span {
   color: #bfbfbf;
-  -webkit-text-decoration: dashed underline #fff;
-          text-decoration: dashed underline #fff;
+  -webkit-text-decoration: dotted underline #fff;
+          text-decoration: dotted underline #fff;
 }
 main .genereal-layout .img {
   width: 100%;
