@@ -12,6 +12,10 @@ footer{
             grid-template-columns: repeat(2, auto);
             row-gap: 3.5rem;
         }
+        @media (max-width: 640px) {
+            grid-template-columns: repeat(1, auto);
+            row-gap: 3.5rem;
+        }
         justify-content: space-around;
 
         .kategoria{

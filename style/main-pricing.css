@@ -44,6 +44,13 @@ main .uplne_hore .dole .container_karty .karta {
   padding: 48px;
   width: -moz-fit-content;
   width: fit-content;
+  min-width: 333px;
+  max-width: 370px;
+  min-height: 585px;
+  max-height: 650px;
+}
+main .uplne_hore .dole .container_karty .karta * {
+  background-color: transparent;
 }
 main .uplne_hore .dole .container_karty .karta .nadpis .tier p {
   color: #fff;
@@ -65,7 +72,7 @@ main .uplne_hore .dole .container_karty .karta .nadpis .price p .cena {
   width: fit-content;
 }
 main .uplne_hore .dole .container_karty .karta .nadpis .price p .dlzka {
-  color: #727272;
+  color: #6e6e6e;
   font-size: 18px;
   width: -moz-fit-content;
   width: fit-content;
@@ -74,7 +81,7 @@ main .uplne_hore .dole .container_karty .karta .nadpis .comment {
   margin-top: 16px;
 }
 main .uplne_hore .dole .container_karty .karta .nadpis .comment p {
-  color: #8C8C8C;
+  color: #9e9e9e;
   font-size: 16px;
   width: -moz-fit-content;
   width: fit-content;
@@ -85,7 +92,7 @@ main .uplne_hore .dole .container_karty .karta .popis .features {
 main .uplne_hore .dole .container_karty .karta .popis .features p {
   width: -moz-fit-content;
   width: fit-content;
-  color: #8C8C8C;
+  color: #9e9e9e;
   font-size: 16px;
 }
 main .uplne_hore .dole .container_karty .karta .popis .features ul {
@@ -93,6 +100,25 @@ main .uplne_hore .dole .container_karty .karta .popis .features ul {
   margin-bottom: 20px;
 }
 main .uplne_hore .dole .container_karty .karta .popis .features ul li {
+  margin-top: 12px;
+  font-size: 16px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .uplne_hore .dole .container_karty .karta .popis .spn_access {
+  margin-top: 32px;
+}
+main .uplne_hore .dole .container_karty .karta .popis .spn_access p {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #9e9e9e;
+  font-size: 16px;
+}
+main .uplne_hore .dole .container_karty .karta .popis .spn_access ul {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+main .uplne_hore .dole .container_karty .karta .popis .spn_access ul li {
   margin-top: 12px;
   font-size: 16px;
   width: -moz-fit-content;

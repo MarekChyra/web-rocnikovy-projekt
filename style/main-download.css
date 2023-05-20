@@ -57,13 +57,12 @@ main .download-portmaster .left p {
   }
 }
 main .download-portmaster .right {
-  max-width: 56rem;
+  width: 100%;
   margin-top: 80px;
 }
 main .download-portmaster .right .under {
-  max-width: 56rem;
-  width: auto;
-  height: auto;
+  max-width: 896px;
+  width: 100%;
 }
 main .desktop {
   display: grid;

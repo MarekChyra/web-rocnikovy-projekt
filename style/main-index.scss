@@ -23,12 +23,12 @@ main{
                 letter-spacing: -0.025em;
                 font-size: 3.75rem;
                 line-height: 1;
-                width: 700px;
+                max-width: 700px;
             }
 
             p{
                 justify-self: center;
-                width: 512px;
+                max-width: 512px;
                 text-align: center;
                 font-weight: 600;
                 line-height: 1.5;
@@ -48,7 +48,7 @@ main{
     .genereal-layout{
         margin: 160px 0px 256px;
         display: grid;
-        grid-template-rows: repeat(3, auto);
+        grid-template-columns: auto;
 
         @media (max-width: 1023px) {
             .item1 {grid-area: 2;}

@@ -18,6 +18,12 @@ footer .site-map {
     row-gap: 3.5rem;
   }
 }
+@media (max-width: 640px) {
+  footer .site-map {
+    grid-template-columns: repeat(1, auto);
+    row-gap: 3.5rem;
+  }
+}
 footer .site-map .kategoria {
   display: grid;
   grid-template-rows: auto auto;

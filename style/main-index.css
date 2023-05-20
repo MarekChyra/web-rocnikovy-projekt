@@ -22,11 +22,11 @@ main .first .top h1 {
   letter-spacing: -0.025em;
   font-size: 3.75rem;
   line-height: 1;
-  width: 700px;
+  max-width: 700px;
 }
 main .first .top p {
   justify-self: center;
-  width: 512px;
+  max-width: 512px;
   text-align: center;
   font-weight: 600;
   line-height: 1.5;
@@ -42,7 +42,7 @@ main .first .video video {
 main .genereal-layout {
   margin: 160px 0px 256px;
   display: grid;
-  grid-template-rows: repeat(3, auto);
+  grid-template-columns: auto;
 }
 @media (max-width: 1023px) {
   main .genereal-layout .item1 {
