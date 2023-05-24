@@ -11,15 +11,14 @@ main .uplne_hore .hore h1 {
   color: #fff;
   font-size: 60px;
   margin-top: 5px;
-  width: -moz-fit-content;
-  width: fit-content;
+  text-align: center;
 }
 main .uplne_hore .hore p {
   color: #bfbfbf;
   font-size: 16px;
   margin-top: 32px;
-  width: -moz-fit-content;
-  width: fit-content;
+  max-width: 650px;
+  text-align: center;
 }
 main .uplne_hore .dole {
   padding: 0px 40px;
@@ -29,26 +28,37 @@ main .uplne_hore .dole {
 }
 main .uplne_hore .dole .container_karty {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  -moz-column-gap: 50px;
-       column-gap: 50px;
-  width: -moz-fit-content;
-  width: fit-content;
   margin-top: 50px;
+  width: 90vw;
+  max-width: 1280px;
+  justify-items: center;
+  justify-content: space-evenly;
+}
+@media (min-width: 1024px) {
+  main .uplne_hore .dole .container_karty {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1023px) {
+  main .uplne_hore .dole .container_karty {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 769px) {
+  main .uplne_hore .dole .container_karty {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 main .uplne_hore .dole .container_karty .karta {
   display: grid;
   grid-template-rows: repeat(2, auto);
   background-color: #0D0D0D;
   border: solid #727272 2px;
-  border-radius: 5px;
-  padding: 48px;
   width: -moz-fit-content;
   width: fit-content;
-  min-width: 333px;
-  max-width: 370px;
-  min-height: 585px;
-  max-height: 650px;
+  margin-top: 25px;
+  border-radius: 25px;
+  padding: 48px;
 }
 main .uplne_hore .dole .container_karty .karta * {
   background-color: transparent;
@@ -58,27 +68,17 @@ main .uplne_hore .dole .container_karty .karta * {
 main .uplne_hore .dole .container_karty .karta .nadpis .tier p {
   color: #fff;
   font-size: 24px;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 main .uplne_hore .dole .container_karty .karta .nadpis .price {
   margin-top: 16px;
 }
-main .uplne_hore .dole .container_karty .karta .nadpis .price p {
-  width: -moz-fit-content;
-  width: fit-content;
-}
 main .uplne_hore .dole .container_karty .karta .nadpis .price p .cena {
   color: #fff;
   font-size: 60px;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 main .uplne_hore .dole .container_karty .karta .nadpis .price p .dlzka {
   color: #6e6e6e;
   font-size: 18px;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 main .uplne_hore .dole .container_karty .karta .nadpis .comment {
   margin-top: 16px;
@@ -86,15 +86,11 @@ main .uplne_hore .dole .container_karty .karta .nadpis .comment {
 main .uplne_hore .dole .container_karty .karta .nadpis .comment p {
   color: #9e9e9e;
   font-size: 16px;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 main .uplne_hore .dole .container_karty .karta .popis .features {
   margin-top: 32px;
 }
 main .uplne_hore .dole .container_karty .karta .popis .features p {
-  width: -moz-fit-content;
-  width: fit-content;
   color: #9e9e9e;
   font-size: 16px;
 }
@@ -105,15 +101,11 @@ main .uplne_hore .dole .container_karty .karta .popis .features ul {
 main .uplne_hore .dole .container_karty .karta .popis .features ul li {
   margin-top: 12px;
   font-size: 16px;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 main .uplne_hore .dole .container_karty .karta .popis .spn_access {
   margin-top: 32px;
 }
 main .uplne_hore .dole .container_karty .karta .popis .spn_access p {
-  width: -moz-fit-content;
-  width: fit-content;
   color: #9e9e9e;
   font-size: 16px;
 }
@@ -124,8 +116,6 @@ main .uplne_hore .dole .container_karty .karta .popis .spn_access ul {
 main .uplne_hore .dole .container_karty .karta .popis .spn_access ul li {
   margin-top: 12px;
   font-size: 16px;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 main .feature_comparation {
   display: grid;
@@ -152,11 +142,26 @@ main .feature_comparation .title p {
 }
 main .feature_comparation .container_karty {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-self: center;
-  -moz-column-gap: 50px;
-       column-gap: 50px;
   margin-top: 100px;
+  width: 90vw;
+  max-width: 1190px;
+  justify-items: center;
+  justify-content: space-evenly;
+}
+@media (min-width: 1024px) {
+  main .feature_comparation .container_karty {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1023px) {
+  main .feature_comparation .container_karty {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 769px) {
+  main .feature_comparation .container_karty {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 main .feature_comparation .container_karty .karta {
   display: grid;
@@ -167,6 +172,7 @@ main .feature_comparation .container_karty .karta {
   background-color: #0d0d0d;
   width: -moz-fit-content;
   width: fit-content;
+  margin-top: 25px;
 }
 main .feature_comparation .container_karty .karta * {
   background-color: #0d0d0d;
